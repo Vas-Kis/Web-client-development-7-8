@@ -111,7 +111,7 @@ app.delete('/inventory/:id', (req, res) => {
   res.status(204).send(); // 204 No Content означає успішне видалення
 });
 
-// --- Запуск сервера ---
+// Запуск сервера
 app.listen(PORT, () => {
   console.log(`Сервер інвентарю було успішно запущено на http://localhost:${PORT}`);
 });
