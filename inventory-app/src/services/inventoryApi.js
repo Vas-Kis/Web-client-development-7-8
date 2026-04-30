@@ -24,4 +24,4 @@ export const inventoryApi = {
   
   // Видалення
   delete: (id) => axios.delete(`${BASE_URL}/inventory/${id}`)
-};
+}; //blablabla
