@@ -10,4 +10,4 @@ export default function ConfirmModal({ onConfirm, onCancel, message }) {
       </div>
     </div>
   );
-}
+} // hmm
