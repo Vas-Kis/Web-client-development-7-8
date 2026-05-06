@@ -29,4 +29,4 @@ export const FavoritesProvider = ({ children }) => {
   );
 };
 
-export const useFavorites = () => useContext(FavoritesContext);
+export const useFavorites = () => useContext(FavoritesContext); //another commit should've been here
