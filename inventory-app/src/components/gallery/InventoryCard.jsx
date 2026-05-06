@@ -30,4 +30,4 @@ export default function InventoryCard({ item, onClick }) {
       </div>
     </div>
   );
-}
+} // another commit

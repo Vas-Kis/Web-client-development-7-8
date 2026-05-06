@@ -17,4 +17,4 @@ export default function InventoryQuickView({ item, onClose }) {
       </div>
     </div>
   );
-}
+} //another commit
