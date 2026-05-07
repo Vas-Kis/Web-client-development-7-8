@@ -8,17 +8,17 @@ export default function AdminInventoryCreate() {
   const [photo, setPhoto] = useState(null);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { // у цій функції створюємо екземпляр FormData
     e.preventDefault();
     if (!formData.inventory_name) return setError('Назва є обов\'язковою');
 
-    const data = new FormData();
+    const data = new FormData(); // підготовка до відправки
     data.append('inventory_name', formData.inventory_name);
     data.append('description', formData.description);
     if (photo) data.append('photo', photo);
 
     try {
-      await inventoryApi.create(data);
+      await inventoryApi.create(data); // перехід в inventoryApi
       navigate('/admin');
     } catch (err) {
       setError('Помилка при збереженні');
@@ -62,3 +62,11 @@ export default function AdminInventoryCreate() {
     </div>
   );
 } //yea
+
+/*
+Поле вибору 
+Обраний файл миттєво зберігається у локальний стан компонента за допомогою хука useState
+запаковуємо їх у спеціальний об'єкт FormData
+
+далі у inventory.api
+*/
