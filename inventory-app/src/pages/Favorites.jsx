@@ -23,4 +23,4 @@ export default function Favorites() {
       )}
     </div>
   );
-}
+} //May the Lord help me
