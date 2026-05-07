@@ -4,6 +4,7 @@ import AdminInventoryCreate from './pages/AdminInventoryCreate';
 import Gallery from './pages/Gallery';
 import Favorites from './pages/Favorites';
 import { FavoritesProvider } from './store/FavoritesContext';
+import AdminInventoryEdit from './pages/AdminInventoryEdit';
 
 function Navigation() {
   return (
@@ -33,7 +34,7 @@ export default function App() {
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/admin" element={<AdminInventory />} />
             <Route path="/admin/create" element={<AdminInventoryCreate />} />
-            {/* Додаткові маршрути для редагування додаються аналогічно */}
+            <Route path="/admin/edit/:id" element={<AdminInventoryEdit />} />
           </Routes>
         </div>
       </Router>
