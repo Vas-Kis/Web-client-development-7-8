@@ -5,6 +5,7 @@ import Gallery from './pages/Gallery';
 import Favorites from './pages/Favorites';
 import { FavoritesProvider } from './store/FavoritesContext';
 import AdminInventoryEdit from './pages/AdminInventoryEdit';
+import AdminInventoryDetails from './pages/AdminInventoryDetails';
 
 function Navigation() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/admin" element={<AdminInventory />} />
             <Route path="/admin/create" element={<AdminInventoryCreate />} />
             <Route path="/admin/edit/:id" element={<AdminInventoryEdit />} />
+            <Route path="/admin/view/:id" element={<AdminInventoryDetails />} />
           </Routes>
         </div>
       </Router>

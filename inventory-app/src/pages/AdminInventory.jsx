@@ -68,7 +68,9 @@ export default function AdminInventory() {
                   <td className="p-4 font-medium text-slate-800">{item.inventory_name}</td>
                   <td className="p-4 text-slate-500 truncate max-w-xs">{item.description}</td>
                   <td className="p-4 flex justify-end gap-2">
-                    <button className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><Eye size={18} /></button>
+                    <Link to={`/admin/view/${item.id}`} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg inline-block">
+                      <Eye size={18} />
+                    </Link>
                     <Link to={`/admin/edit/${item.id}`} className="p-2 text-emerald-500 hover:bg-emerald-50 rounded-lg"><Edit size={18} /></Link>
                     <button onClick={() => setDeleteId(item.id)} className="p-2 text-red-500 hover:bg-red-50 rounded-lg"><Trash2 size={18} /></button>
                   </td>
